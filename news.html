@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News - CitySpace</title>
+	<meta name="keywords" content="Canada, Toronto, events, news events">
+	<meta name="description" content="Find latest news about events in Canadian cities with us">
+    
+    <!-- styles -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/news.css">
+    
+    <!-- extra contents -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <!-- website logo -->
+        <figure id="logo">
+            <a href="news.html"><img src="images/logo.png" alt="logo" width="150px" height="auto"></a>
+        </figure>
+
+        <!-- navigation bar -->
+        <nav class="topnav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="#"><div class="navOdd user_info"></div></a></li>
+                <li><a href="news.html"><div class="navEven active"><p>News</p></div></a></li>              <!-- active link -->
+                <!-- nested menu -->
+                <li class="nestedMenu"><a href="#"><div><p>Content</p></div></a>
+                    <ul>
+                        <li><a href="gallery.html"><div class="navOdd"><p>Gallery</p></div></a></li>
+                        <li><a href="landmarks.html"><div class="navEven"><p>Landmarks</p></div></a></li>
+                        <li><a href="events.html"><div class="navOdd"><p>Events</p></div></a></li>
+                        <li><a href="placestogo.html"><div class="navEven"><p>Places</p></div></a></li>
+                    </ul>
+                </li>
+                <!--Nested menu will be displayed in mobile version-->
+                <li class="mobile_version"><a href="gallery.html"><div class="navOdd nested"><p>Gallery</p></div></a></li>   
+                <li class="mobile_version"><a href="landmarks.html"><div class="navEven nested"><p>Landmarks</p></div></a></li>
+                <li class="mobile_version"><a href="events.html"><div class="navOdd nested"><p>Events</p></div></a></li>
+                <li class="mobile_version"><a href="placestogo.html"><div class="navEven nested"><p>Places</p></div></a></li>
+                <!--End of nested menu-->
+                <li><a href="contact.html"><div class="navOdd"><p>Contact</p></div></a></li>         
+                <li><a href="about.html"><div class="navOdd"><p>About</p></div></a></li>
+                <li><a href="#" onclick="logout()"><div class="navOdd"><p>Logout</p></div></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- different news articles -->
+        <h1>News & Articles</h1>
+        <div class="articles"></div>  <!-- dynamically loading contennt from the js file -->
+    </main>
+
+    <footer>
+        <div class="container-fluid"> 
+            <a class="website_name" href="#">CITY SPACE</a> 
+        </div>
+        <div class="copyright">
+            <span class="footer__copyright">© All Rights Reserved</span>
+            <span style="display: none">v0.0.1</span>
+        </div>
+    </footer>
+
+    <!-- js files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
