@@ -15,7 +15,7 @@ else
 }
 
 /* registration form submit function */
-$( "#registration_form" ).submit(function( event ) {
+$("#registration_form").submit(function( event ) {
 	event.preventDefault();								//prevent form submission
 	checkUserName();
 	checkEmail();
